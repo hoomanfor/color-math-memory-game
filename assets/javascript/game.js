@@ -12,15 +12,49 @@ $(document).ready(function() {
     var winningNumber = Math.floor(Math.random() * 120) + 19; //random number between 19 - 120
     console.log("winningNumber: " + winningNumber);
     $("#winning-number").text(winningNumber);
+
     var fourNumbersArray = [];
 
-    while (fourNumbersArray.length < 4) {
-        var colorNumber = Math.floor(Math.random() * 12) + 1; 
-        if (fourNumbersArray.indexOf(colorNumber) === -1) {
-            fourNumbersArray.push(colorNumber);
-        };
-    }
+    var userScore = 0;
 
-    console.log(fourNumbersArray); 
+    function resetColorValues() {
+        while (fourNumbersArray.length < 4) {
+            var colorNumber = Math.floor(Math.random() * 12) + 1; 
+            if (fourNumbersArray.indexOf(colorNumber) === -1) {
+                fourNumbersArray.push(colorNumber);
+            };
+        };
+    };
+
+    resetColorValues()
+    console.log("fourNumbersArray: ", fourNumbersArray);
+
+    $("#red").on("click", function() {
+        var redValue = fourNumbersArray[0];
+        userScore = userScore + redValue;
+        $("#user-score").text(userScore)
+        console.log("redValue: " + redValue);
+    });
+
+    $("#blue").on("click", function() {
+        var blueValue = fourNumbersArray[1];
+        userScore = userScore + blueValue;
+        $("#user-score").text(userScore)
+        console.log("redValue: " + blueValue);
+    });
+
+    $("#yellow").on("click", function() {
+        var yellowValue = fourNumbersArray[2];
+        userScore = userScore + yellowValue;
+        $("#user-score").text(userScore)
+        console.log("yellowValue: " + yellowValue);
+    });
+
+    $("#green").on("click", function() {
+        var greenValue = fourNumbersArray[3];
+        userScore = userScore + greenValue;
+        $("#user-score").text(userScore)
+        console.log("greenValue: " + greenValue);
+    });
 
 });
