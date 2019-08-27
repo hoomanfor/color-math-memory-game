@@ -43,11 +43,11 @@ $(document).ready(function() {
         console.log("redValue: " + redValue);
         if (userScore === winningNumber) {
             wins = wins + 1;
-            $("#wins").text(wins);
+            $("#wins").html(wins);
             resetGame();
         } else if (userScore > winningNumber) {
             losses = losses + 1;
-            $("#losses").text(wins);
+            $("#losses").html(losses);
             resetGame();
         }
     });
@@ -59,11 +59,11 @@ $(document).ready(function() {
         console.log("redValue: " + blueValue);
         if (userScore === winningNumber) {
             wins = wins + 1;
-            $("#wins").text(wins);
+            $("#wins").html(wins);
             resetGame();
         } else if (userScore > winningNumber) {
             losses = losses + 1;
-            $("#losses").text(wins);
+            $("#losses").html(losses);
             resetGame();
         }
     });
@@ -75,11 +75,11 @@ $(document).ready(function() {
         console.log("yellowValue: " + yellowValue);
         if (userScore === winningNumber) {
             wins = wins + 1;
-            $("#wins").text(wins);
+            $("#wins").html(wins);
             resetGame();
         } else if (userScore > winningNumber) {
             losses = losses + 1;
-            $("#losses").text(wins);
+            $("#losses").html(losses);
             resetGame();
         }
     });
@@ -91,11 +91,11 @@ $(document).ready(function() {
         console.log("greenValue: " + greenValue);
         if (userScore === winningNumber) {
             wins = wins + 1;
-            $("#wins").text(wins);
+            $("#wins").html(wins);
             resetGame();
         } else if (userScore > winningNumber) {
             losses = losses + 1;
-            $("#losses").text(wins);
+            $("#losses").html(losses);
             resetGame();
         }
     });
