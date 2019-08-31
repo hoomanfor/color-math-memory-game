@@ -25,42 +25,62 @@ main {
     border: 1px dashed blue; 
 }
 
-.color {
-    border: 1px solid black;
-    float: left;
-    width: 75px;
-    height: 75px; 
-    cursor: pointer;
-    /* margin: 0 10px 0 0;  */
-}
-
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: blue; 
-}
-
-.yellow {
-    background-color: yellow;
-    float:right;
-}
-
-.green {
-    background-color: green; 
-    float: right; 
-}
-
 .colors-section {
     border: 1px solid black; 
     overflow: auto;
     margin: auto;
-    width: 50%;
-
+    width: 640px;
 }
 
+.color {
+    border: 1px solid black;
+    /* float: left; */
+    width: 100px;
+    height: 100px; 
+    cursor: pointer;
+    position: relative; 
+    border-radius: 15%;
+}
+
+.red {
+    background-color: red;
+    float: left;
+}
+
+.blue {
+    background-color: blue;
+    float: left;
+    left: 10px;
+}
+
+.yellow {
+    background-color: yellow;
+    float: right;
+}
+
+.green {
+    background-color: green; 
+    float: right;
+    right: 10px;
+}
+
+.red::after,
+.blue::after,
+.yellow::after,
+.green::after {
+    content: "";
+    background-image: url("../images/whirlpool.png");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 15%;
+  }
+
 .metrics {
+    border: 1px solid black;
     clear: both; 
 }
 
