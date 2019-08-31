@@ -39,29 +39,42 @@ main {
     height: 100px; 
     cursor: pointer;
     position: relative; 
-    border-radius: 15%;
 }
 
 .red {
     background-color: red;
     float: left;
+    border-radius: 15%;
 }
 
 .blue {
     background-color: blue;
     float: left;
+    border-radius: 15%;
     left: 10px;
+}
+
+.winning-number {
+    display: inline-block; 
+    position: relative;
+    left: 45px;
+    text-align: center; 
+    font-family: 'Concert One', cursive;
 }
 
 .yellow {
     background-color: yellow;
     float: right;
+    border-radius: 15%;
+
 }
 
 .green {
     background-color: green; 
     float: right;
     right: 10px;
+    border-radius: 15%;
+
 }
 
 .red::after,
