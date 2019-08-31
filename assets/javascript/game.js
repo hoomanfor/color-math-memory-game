@@ -22,6 +22,7 @@ $(document).ready(function() {
         $("#winning-number").text(winningNumber);
         fourNumbersArray = [];
         userScore = 0;
+        $("#user-score").text(userScore);
         setColorValues()
     }
 

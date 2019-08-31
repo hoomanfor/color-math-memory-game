@@ -4,37 +4,43 @@
 
 body {
     font-size: 18px; 
+    font-family: 'Concert One', cursive;
 }
 
 header {
-    width: 80%;
+    width: 640px;
     margin: 0 auto; 
-    /* font-family: 'Anton', sans-serif; */
     font-family: 'Permanent Marker', cursive;
     font-size: 32px; 
 }
 
-h1 {
+section {
     text-align: center; 
-    padding: 15px; 
 }
 
+h1 {
+    text-align: center; 
+    padding: 10px; 
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px; 
+}
+
+
 main {
-    width: 80%;
+    width: 640px;
     margin: 0 auto; 
-    border: 1px dashed blue; 
 }
 
 .colors-section {
-    border: 1px solid black; 
     overflow: auto;
     margin: auto;
-    width: 640px;
+    padding-top: 10px; 
 }
 
 .color {
-    border: 1px solid black;
-    /* float: left; */
     width: 100px;
     height: 100px; 
     cursor: pointer;
@@ -45,6 +51,7 @@ main {
     background-color: red;
     float: left;
     border-radius: 15%;
+    border: 1px solid black;
 }
 
 .blue {
@@ -52,21 +59,14 @@ main {
     float: left;
     border-radius: 15%;
     left: 10px;
-}
-
-.winning-number {
-    display: inline-block; 
-    position: relative;
-    left: 45px;
-    text-align: center; 
-    font-family: 'Concert One', cursive;
+    border: 1px solid black;
 }
 
 .yellow {
     background-color: yellow;
     float: right;
     border-radius: 15%;
-
+    border: 1px solid black;
 }
 
 .green {
@@ -74,7 +74,7 @@ main {
     float: right;
     right: 10px;
     border-radius: 15%;
-
+    border: 1px solid black;
 }
 
 .red::after,
@@ -93,10 +93,17 @@ main {
   }
 
 .metrics {
-    border: 1px solid black;
-    clear: both; 
+    display: inline-block; 
+    position: relative;
+    left: 45px;
+    text-align: center; 
+    font-family: 'Concert One', cursive;
 }
 
-/* font-family: 'Anton', sans-serif;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Concert One', cursive; */
+.win-loss {
+    display: inline-block; 
+}
+
+span {
+    font-size: 22px; 
+}

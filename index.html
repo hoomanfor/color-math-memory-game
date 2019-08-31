@@ -18,26 +18,28 @@
             <h1>Color & Math Memory Game</h1>
         </header>
         <main>
-            <div class="colors-section">
-            <!-- Colors -->
-            <div class="color red" id="red"></div>
-            <div class="color blue" id="blue"></div>
-                <div class="winning-number">
-                    <p>Winning Number<br><span id="winning-number"></span></p>
-                    <p>User's Score<br><span id="user-score">0</span></p>
-                    <p>Wins: <span id="wins">0</span></p>
-                    <p>Losses: <span id="losses">0</span></p>
-                </div>
-            <div class="color yellow" id="yellow"></div>
-            <div class="color green" id="green"></div>
-            </div>
-            <section class="metrics">
-            <!-- Winning Number & User's Score -->
-            <!-- <div class="">Winning Number: <span id="winning-number"></span></div>
-            <div class="">User's Score: <span id="user-score"></span></div> -->
-            <!-- <div class="">Wins: <span id="wins">0</span></div>
-            <div class="">Losses: <span id="losses">0</span></div> -->
+            <section>
+                <h2>How to play?</h2>
+                <p>
+                Each one of the 4 color blocks has a random value between 1 and 12.<br>
+                By clicking on the blocks, you add points to your total.<br>
+                Your goal is to make your total match the winning total.<br>
+                If you do this, you win!<br>
+                However, if your total becomes greater than the winning total, you lose. 
+                </p>
             </section>
+            <div class="colors-section">
+                <div class="color red" id="red"></div>
+                <div class="color blue" id="blue"></div>
+                    <div class="metrics">
+                        <p>Winning Total:<br><span id="winning-number"></span></p>
+                        <p>My Total:<br><span id="user-score">0</span></p>
+                        <p class="win-loss">Wins: <span id="wins">0</span></p>
+                        <p class="win-loss">Losses: <span id="losses">0</span></p>
+                    </div>
+                <div class="color yellow" id="yellow"></div>
+                <div class="color green" id="green"></div>
+            </div>
         </main>
         <!-- jQuery CDN -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
