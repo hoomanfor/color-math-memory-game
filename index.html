@@ -6,22 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Title -->
         <title>Color Math Memory</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Anton|Concert+One|Permanent+Marker&display=swap" rel="stylesheet">
         <!-- Reset CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        <!-- Colors -->
-        <div class="color red" id="red"></div>
-        <div class="color blue" id="blue"></div>
-        <div class="color yellow" id="yellow"></div>
-        <div class="color green" id="green"></div>
-        <!-- Winning Number & User's Score -->
-        <div class="">Winning Number: <span id="winning-number"></span></div>
-        <div class="">User's Score: <span id="user-score"></span></div>
-        <div class="">Wins: <span id="wins">0</span></div>
-        <div class="">Losses: <span id="losses">0</span></div>
+        <header>
+            <h1>Color & Math Memory Game</h1>
+        </header>
+        <main>
+            <div class="colors-section">
+            <!-- Colors -->
+            <div class="color red" id="red"></div>
+            <div class="color blue" id="blue"></div>
+            <div class="color yellow" id="yellow"></div>
+            <div class="color green" id="green"></div>
+            </div>
+            <section class="metrics">
+            <!-- Winning Number & User's Score -->
+            <div class="">Winning Number: <span id="winning-number"></span></div>
+            <div class="">User's Score: <span id="user-score"></span></div>
+            <div class="">Wins: <span id="wins">0</span></div>
+            <div class="">Losses: <span id="losses">0</span></div>
+            </section>
+        </main>
         <!-- jQuery CDN -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Game Logic -->

@@ -2,12 +2,36 @@
     box-sizing: border-box; 
 }
 
+body {
+    font-size: 18px; 
+}
+
+header {
+    width: 80%;
+    margin: 0 auto; 
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px; 
+}
+
+h1 {
+    text-align: center; 
+    padding: 15px; 
+}
+
+main {
+    width: 80%;
+    margin: 0 auto; 
+    border: 1px dashed blue; 
+}
+
 .color {
     border: 1px solid black;
-    height: 75px; 
-    width: 75px; 
     float: left;
+    width: 75px;
+    height: 75px; 
     cursor: pointer;
+    /* margin: 0 10px 0 0;  */
 }
 
 .red {
@@ -20,8 +44,26 @@
 
 .yellow {
     background-color: yellow;
+    float:right;
 }
 
 .green {
     background-color: green; 
+    float: right; 
 }
+
+.colors-section {
+    border: 1px solid black; 
+    overflow: auto;
+    margin: auto;
+    width: 50%;
+
+}
+
+.metrics {
+    clear: both; 
+}
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Concert One', cursive; */
