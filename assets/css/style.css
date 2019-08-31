@@ -7,6 +7,11 @@ body {
     font-family: 'Concert One', cursive;
 }
 
+main {
+    width: 640px;
+    margin: 0 auto; 
+}
+
 header {
     width: 640px;
     margin: 0 auto; 
@@ -26,12 +31,6 @@ h1 {
 h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 24px; 
-}
-
-
-main {
-    width: 640px;
-    margin: 0 auto; 
 }
 
 .colors-section {
@@ -106,4 +105,24 @@ main {
 
 span {
     font-size: 22px; 
+}
+
+@media screen and (max-width: 640px) {
+    main,
+    header {
+        width: 100%; 
+    }
+    .metrics {
+        font-size: 12px; 
+    }
+    span {
+        /* font-size: 10px; */
+    }
+    .colors-section {
+        width: 400px;
+    }
+    .color {
+        width: 50px;
+        height: 50px; 
+    }
 }
